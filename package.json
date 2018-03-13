@@ -1,0 +1,34 @@
+{
+  "name": "number1.pizza",
+  "version": "0.0.0",
+  "description": "number1.pizza",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "build:prod": "webpack --mode=production",
+    "lint": "tslint -t codeFrame 'src/**/*.ts'",
+    "start:dev": "node_modules/.bin/webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lauren Tan <arr@sugarpirate.com> (http://www.sugarpirate.com)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/three": "^0.89.12",
+    "three": "^0.90.0"
+  },
+  "devDependencies": {
+    "exports-loader": "^0.7.0",
+    "file-loader": "^1.1.11",
+    "imports-loader": "^0.8.0",
+    "prettier": "^1.11.1",
+    "ts-loader": "^4.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
