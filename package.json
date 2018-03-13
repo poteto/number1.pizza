@@ -7,8 +7,9 @@
     "build": "webpack --mode=development",
     "build:prod": "webpack --mode=production",
     "lint": "tslint -t codeFrame 'src/**/*.ts'",
-    "start:dev": "node_modules/.bin/webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "author": "Lauren Tan <arr@sugarpirate.com> (http://www.sugarpirate.com)",
   "license": "MIT",
@@ -18,10 +19,12 @@
     "three": "^0.90.0"
   },
   "devDependencies": {
+    "css-loader": "^0.28.10",
     "exports-loader": "^0.7.0",
     "file-loader": "^1.1.11",
     "imports-loader": "^0.8.0",
     "prettier": "^1.11.1",
+    "style-loader": "^0.20.3",
     "ts-loader": "^4.0.1",
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.10.0",
