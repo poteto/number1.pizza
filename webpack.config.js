@@ -18,15 +18,11 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.png$/,
+        test: /\.(png|obj|mtl)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]'
         }
-      },
-      {
-        test: /\.(obj|mtl)$/,
-        use: 'file-loader'
       },
       // https://github.com/mrdoob/three.js/issues/9562#issuecomment-372169712
       {
@@ -42,13 +38,6 @@ module.exports = {
         use: [
           'imports-loader?THREE=three',
           'exports-loader?THREE.OrbitControls'
-        ]
-      },
-      {
-        test: require.resolve('three/examples/js/controls/Detector'),
-        use: [
-          'imports-loader?THREE=three',
-          'exports-loader?THREE.Detector'
         ]
       }
     ]

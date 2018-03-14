@@ -10,7 +10,6 @@ import {
 import MTLLoader from 'three/examples/js/loaders/MTLLoader';
 import OBJLoader from 'three/examples/js/loaders/OBJLoader';
 import OrbitControls from 'three/examples/js/controls/OrbitControls';
-import Detector from 'three/examples/js/Detector';
 
 import pizzaMtl from './models/pizza/pepperoni pizza.mtl';
 import pizzaObj from './models/pizza/pepperoni pizza.obj';
@@ -19,10 +18,6 @@ import './models/pizza/pizzaTxt.png';
 import './style.css';
 
 let controls, camera, scene, renderer;
-
-if (!Detector.webgl) {
-  Detector.addGetWebGLMessage();
-}
 
 init();
 animate();
